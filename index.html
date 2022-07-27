@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <span class="out"></span>
+            <div class="calculator-display">
+                <div class="display-value">
+                    <img src="./close.png" alt="" class="close">
+                    <input type="text" placeholder="0" id="input-value" readonly>
+                </div>
+            </div>
+            <div class="calculator-key">
+                <div class="key-row">
+                    <div class="key" onclick="getNumber(7)">7</div>
+                    <div class="key" onclick="getNumber(8)">8</div>
+                    <div class="key" onclick="getNumber(9)">9</div>
+                    <div class="key key-op" onclick="getOperation('/')">/</div>
+                </div>
+                <div class="key-row">
+                    <div class="key" onclick="getNumber(4)">4</div>
+                    <div class="key" onclick="getNumber(5)">5</div>
+                    <div class="key" onclick="getNumber(6)">6</div>
+                    <div class="key key-op" onclick="getOperation('*')">*</div>
+                </div>
+                <div class="key-row">
+                    <div class="key" onclick="getNumber(1)">1</div>
+                    <div class="key" onclick="getNumber(2)">2</div>
+                    <div class="key" onclick="getNumber(3)">3</div>
+                    <div class="key key-op" onclick="getOperation('-')">-</div>
+                </div>
+                <div class="key-row">
+                    <div class="key key-op dot" onclick="getNumber('.')">.</div>
+                    <div class="key key-op" onclick="getNumber('0')">0</div>
+                    <div class="key key-op" onclick="getOperation('+')">+</div>
+                    <div class="key key-op eq" onclick="equals()">=</div>
+                </div>
+
+            </div>
+            <script src="./js/script.js"></script>
+</body>
+
+</html>
